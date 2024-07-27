@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Publisher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding-top: 150px;
+        }
+        .section {
+            padding: 20px;
+        }
+        .featured-books img {
+            width: 100px;
+            height: 150px;
+            margin: 10px;
+        }
+        .team img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Publisher Logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to Our Publishing House</h1>
+        <p>Discover our latest releases and featured authors</p>
+    </div>
+
+    <div class="section" id="home">
+        <h2>Featured Books</h2>
+        <div class="featured-books">
+            <img src="book1.jpg" alt="Book 1">
+            <img src="book2.jpg" alt="Book 2">
+            <img src="book3.jpg" alt="Book 3">
+        </div>
+        <p><a href="#books">Explore our catalog</a> or <a href="#newsletter">sign up for our newsletter</a></p>
+    </div>
+
+    <div class="section" id="about">
+        <h2>About Us</h2>
+        <p>Our publishing house was founded in [Year] with the mission to [Mission Statement].</p>
+        <h3>Our History</h3>
+        <p>[Detailed history of the publisher]</p>
+        <h3>Our Team</h3>
+        <div class="team">
+            <img src="team1.jpg" alt="Team Member 1">
+            <img src="team2.jpg" alt="Team Member 2">
+            <img src="team3.jpg" alt="Team Member 3">
+        </div>
+    </div>
+
+    <div class="section" id="books">
+        <h2>Our Books</h2>
+        <p>Browse our collection by category:</p>
+        <ul>
+            <li>Fiction</li>
+            <li>Non-Fiction</li>
+            <li>Children's Books</li>
+        </ul>
+        <div class="book-listings">
+            <div class="book">
+                <img src="book-cover.jpg" alt="Book Cover">
+                <h3>Book Title</h3>
+                <p>Author: [Author Name]</p>
+                <p>[Book Synopsis]</p>
+                <a href="#">Purchase Link</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="authors">
+        <h2>Our Authors</h2>
+        <div class="author-profile">
+            <img src="author.jpg" alt="Author Photo">
+            <h3>[Author Name]</h3>
+            <p>[Author Bio]</p>
+            <h4>Published Works</h4>
+            <ul>
+                <li>Book 1</li>
+                <li>Book 2</li>
+                <li>Book 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="newsletter-signup" id="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <form>
+                <label for="newsletter-email">Email:</label>
+                <input type="email" id="newsletter-email" name="newsletter-email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© [Year] Book Publisher. All rights reserved.</p>
+    </footer>
+</body>
+</html>
